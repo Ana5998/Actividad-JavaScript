@@ -9,6 +9,20 @@
         <script>
             
             // Solicita edad por teclado
+            do{
+                var edad=prompt('¿Qué edad tienes?');
+                console.log('Preguntamos edad: '+edad);
+            }
+            while(isNaN(edad)|| edad==null || edad=="" || edad.trim()=="");
+            // Comprobamos si la edad es la de un menor de edad.        
+                
+            if(edad>=18)
+           
+            alert('Con '+edad+' tiene permiso para conducir.');
+
+            else
+            
+            alert('Con '+edad+' todavía no puede conducir.');
             // var edad=prompt('¿Cuantos años tienes? '); <-- DESCOMENTA
 
             // Comprobamos que el valor introducido es un numero

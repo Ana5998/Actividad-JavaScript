@@ -2,7 +2,7 @@
  * Implementa la serie de Fibonacci
  * @param {*} n: número de elementos de la serie.
  * @returns vector con la serie de Fibonacci.
- * @author: Sustituye tu nombre y apellidos aquí
+ * @author: Ana Arroyo Quiles
  */
 function fibonacci(n)
 {
@@ -11,6 +11,12 @@ function fibonacci(n)
     
     // ESCRIBE TU CÓDIGO AQUÍ
     
+    vector[0];
+    vector[1];
+
+    for(let i=2; i<n; i++){
+        vector[i]=vector[i-1]+vector[i-2];
+}
     
     return vector; // Retorno de la función
 }
