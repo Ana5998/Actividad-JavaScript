@@ -1,11 +1,11 @@
 /**
  * Ejercicio 12. Calculadora JavaScript
- * Autor: 
+ * Autor: Ana Arroyo Quiles
  */
 
 /**
  * Implementa el Menú 1: Sumar
- * @author: Coloca tu nombre aquí.
+ * @author: Ana Arroyo Quiles
  * @return suma
  */
 function menu1()
@@ -21,7 +21,7 @@ function menu1()
 
 /**
  * Implementa el Menú 2: Restar
- * @author: Coloca tu nombre aquí.
+ * @author: Ana Arroyo Quiles
  * @return resta
  */
 function menu2()
@@ -30,16 +30,15 @@ function menu2()
     console.info("Resta:");
     
     // IMPLEMENTA TU CÓDIGO AQUÍ
-    let minuendo=0;
-    let sustraendo=0;
-    let resultado=-1;
-
+    let minuendo=parseInt(prompt("Introduzca el minuendo: ",0));;
+    let sustraendo=parseInt(prompt("Introduzca el sustraendo: ",0));;
+    let resultado=minuendo - sustraendo;
     console.log("El resultado de la resta "+minuendo+" - "+sustraendo+" es "+resultado);
     return resultado;
 }
 /**
  * Implementa el Menú 3: Multiplicar
- * @author: Coloca tu nombre aquí.
+ * @author: Ana Arroyo Quiles
  * @return multiplicación
  */
 function menu3()
@@ -48,13 +47,17 @@ function menu3()
     console.info("Multiplica:");
     
     // IMPLEMENTA TU CODIGO AQUÍ 
-
-    return 3;
+    let multiplicando=parseInt(prompt("Introduzca el multiplicando: ",0));;
+    let multiplicador=parseInt(prompt("Introduzca el multiplicador: ",0));;
+    let resultado=multiplicando * multiplicador;
+    console.log("El resultado de la multiplicación "+multiplicando+" - "+multiplicador+" es "+resultado);
+    return resultado;
+    
 }
 
 /**
  * Implementa el Menú 4: Dividir
- * @author: Coloca tu nombre aquí.
+ * @author: Ana Arroyo Quiles
  * @return división
  */
 function menu4()
@@ -64,7 +67,11 @@ function menu4()
     
     // IMPLEMENTA TU CÓDIGO AQUÍ
 
-    return 4;
+    let dividendo=parseInt(prompt("Introduzca el dividendo: ",0));;
+    let divisor=parseInt(prompt("Introduzca el divisor: ",0));;
+    let resultado=dividendo / divisor;
+    console.log("El resultado de la división "+dividendo+" - "+divisor+" es "+resultado);
+    return resultado;
 
 }
 
