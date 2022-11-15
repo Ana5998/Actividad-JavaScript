@@ -2,12 +2,21 @@
  * Calcula la media de los valores
  * @param {Array} v 
  * @returns media
- * @author: Autor/a
+ * @author: Ana Arroyo Quiles
  */
 function calcularMedia(v)
 {
+    
+   let suma=0;
+
+   for (let i=0;i<v.length;i++){
+
+        suma=v[i]+suma;
+
+   } 
+        
     // IMPLEMENTA TU CODIGO AQUÍ
-    return -1;
+    return suma/v.length;
 }
 /**
  * Obtiene la nota mínima
@@ -16,9 +25,20 @@ function calcularMedia(v)
  */
 function calcularMinimo(v)
 {
-    let minima=Number.MIN_VALUE; // <-- CORRIGE E IMPLEMENTA EL CODIGO
+
+    let minimo=v[0];
+
+    for (let i=0;i<v.length;i++){
+
+        if (v[i]<minimo){
+
+            minimo=v[i];
+
+        }
+
+    }
     
-    return minima;
+    return minimo;
 }
 /**
  * Obtiene la nota Máxima
@@ -27,7 +47,18 @@ function calcularMinimo(v)
  */
 function calcularMaximo(v)
 {
-    let maxima=Number.MAX_VALUE; // <-- CORRIGE E IMPLEMENTA EL CODIGO
+    
+    let maxima=v[0];
+
+    for (let i=0; i<v.length; i++){
+
+        if(v[i]>maxima){
+
+            maxima=v[i];
+
+        }
+
+    }
 
     return maxima;
 }
@@ -39,6 +70,14 @@ function calcularMaximo(v)
 function contarAprobados(v)
 {
     let aprobados=0;
+
+    for (let i=0;i<v.length;i++){
+
+        if(v[i]>=5){
+            aprobados++;
+        }
+
+    }
 
     // COMPLETA TU CODIGO
 
@@ -53,6 +92,13 @@ function contarSuspensos(v)
 {
     let suspensos=0;
     
+    for (let i=0;i<v.length;i++){
+
+        if(v[i]<5){
+            suspensos++;
+        }
+
+    }
     // COMPLETA TU CODIGO
 
     return suspensos;
