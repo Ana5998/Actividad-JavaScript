@@ -2,7 +2,7 @@
  * Calcula la media de los valores
  * @param {Array} v 
  * @returns media
- * @author: Autor/a
+ * @author: Ana Arroyo Quiles
  */
 function calcularMedia(v)
 {

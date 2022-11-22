@@ -10,8 +10,18 @@ function fibonacci(n)
     
     
     // ESCRIBE TU CÓDIGO AQUÍ
+    if(n<=0){
+        return vector;
+    }
     
+
+
     vector[0]=1;
+
+    if(n==1){
+        return vector;
+    }
+
     vector[1]=1;
 
     for(let i=2; i<n; i++){
