@@ -9,6 +9,10 @@ function calcularMedia(v)
     
    let suma=0;
 
+   if(v.length==0){
+    return 0;
+   }
+
    for (let i=0;i<v.length;i++){
 
         suma=v[i]+suma;
@@ -27,6 +31,10 @@ function calcularMinimo(v)
 {
 
     let minimo=v[0];
+
+    if(v.length==0){
+        return 0;
+    }
 
     for (let i=0;i<v.length;i++){
 
@@ -49,6 +57,10 @@ function calcularMaximo(v)
 {
     
     let maxima=v[0];
+
+    if(v.length==0){
+        return 0;
+    }
 
     for (let i=0; i<v.length; i++){
 
