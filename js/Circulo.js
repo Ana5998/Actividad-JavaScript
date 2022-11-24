@@ -19,8 +19,10 @@ class Circulo extends Figura{
      * @returns area:float
      */
     calcularArea()
-    {       
-        return (-3); // <-- COMPLETA Y CORRIGE EL CÓDIGO
+    {     
+        let area;
+        area=2*Math.PI*this.radio;
+        return area; // <-- COMPLETA Y CORRIGE EL CÓDIGO
     }
     /**
      * Calcula el perímetro de la circunferencia,
